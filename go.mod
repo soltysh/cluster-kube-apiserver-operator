@@ -35,3 +35,9 @@ require (
 	k8s.io/utils v0.0.0-20201110183641-67b214c5f920
 	sigs.k8s.io/kube-storage-version-migrator v0.0.3
 )
+
+replace (
+	k8s.io/api => k8s.io/api v0.20.1
+	k8s.io/apimachinery => github.com/jpbetz/kubernetes/staging/src/k8s.io/apimachinery v0.0.0-20210111174305-223d7d8c1eb4
+	k8s.io/client-go => github.com/jpbetz/kubernetes/staging/src/k8s.io/client-go v0.0.0-20210111174305-223d7d8c1eb4
+)
